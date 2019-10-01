@@ -13,7 +13,7 @@ class Board extends Component{
       for(let i = this.props.row; i>0; i--){
 	const cols=[];
 	for(let j = 1; j<=this.props.col; j++){
-           cols.push(<BoardCell color={((i+j)%2==0)?"black":"white"} key={j}>{this.props.board(i,j)}</BoardCell>)
+           cols.push(<BoardCell color={((i+j)%2==0)?"black":"white"} key={j} onClick={this.props.click}>{this.props.board(i,j)}</BoardCell>)
 	}
         res.push(<BoardRow row={i} key={i}>{cols}</BoardRow>)
       }
@@ -26,11 +26,13 @@ Board.propTypes = {
   board: PropTypes.func,
   reverse: PropTypes.bool,
   row: PropTypes.number,
-  col: PropTypes.number,	
+  col: PropTypes.number,
+  click: PropTypes.func,	
 }
 
 Board.defaultProps = {
  board : (i,j) => undefined,
+ click : ()=>{},	
  col: 8,
  row: 8,
  reverse: false,	
