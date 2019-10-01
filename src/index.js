@@ -1,5 +1,8 @@
-import Panel from "Panel";
+import Board from "Board";
+import ChessKnight from "ChessKnight";
 
 module.exports = {
-  Panel
+  Board,
+  ChessKnight,	
+  SeaBoard,
 };
