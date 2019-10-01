@@ -13,6 +13,7 @@ class SeaBoard extends Component{
         <div className={b("center")}>
            <div className={b("left")}>{this.props.left}</div>
            <div className={b("right")}>{this.props.right}</div>
+           <div className={b("bottom")}>{this.props.bottom}</div>
         </div>
         <div className={b("tl")}> 
           <div className={b("cell")}>{[arr[0]]}</div>
