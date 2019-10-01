@@ -10,6 +10,8 @@ import board from "Board/stories";
 import chessKnight from "ChessKnight/stories";
 import Board from "Board";
 import ChessKnight from "ChessKnight";
+import seaBoard from "SeaBoard/stories";
+import seaFish from "SeaFish/stories";
 
 storiesOf("Board with knight", module)
   .add("as text",()=><Board col={8} row={8} board={(i,j)=>(i==4 && j == 4)?"♘":undefined}/>)
