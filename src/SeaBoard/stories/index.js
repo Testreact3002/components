@@ -7,6 +7,12 @@ export default storiesOf("SeaBoard", module)
   .addDecorator(fn=>(<div style={{
   }}>{fn()}</div>))
   .add("default", () => <SeaBoard />)
+  .add("Red shark bite turtle", () => <SeaBoard right={<SeaFish fishType="shark" color="red" bite big/>} left={<SeaFish fishType="turtle" big/>}/>)
+  .add("Red shark bite jellyfish", () => <SeaBoard right={<SeaFish fishType="shark" color="red" bite big/>} left={<SeaFish fishType="jellyfish" big/>}/>)
+  .add("Red shark bite star", () => <SeaBoard right={<SeaFish fishType="shark" color="red" bite big/>} left={<SeaFish fishType="starfish" big/>}/>)
+  .add("Orange turtle bite green jellyfish", () => <SeaBoard right={<SeaFish fishType="turtle" color="orange" bite big/>} left={<SeaFish fishType="jellyfish" color="green" big/>}/>)
+  .add("Orange turtle bite green starfish", () => <SeaBoard right={<SeaFish fishType="turtle" color="orange" bite big/>} left={<SeaFish fishType="starfish" color="green" big/>}/>)
+  .add("Orange turtle bite green shark", () => <SeaBoard right={<SeaFish fishType="turtle" color="orange" bite big/>} left={<SeaFish fishType="shark" color="green" big/>}/>)
   .add("with map", () => <SeaBoard map={function(){
     return [ 
    [

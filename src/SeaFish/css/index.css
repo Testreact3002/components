@@ -12,3 +12,16 @@
   width: 45px;  
   height: 45px;
 }
+.sea-fish.sea-fish_big{
+  width: initial;
+  height: initial;
+  display: flex;
+  
+}
+.sea-fish__image.sea-fish__image_big{
+  width: initial;
+  height: initial;
+  max-width: 100%;
+  max-height: 100%;
+}
+

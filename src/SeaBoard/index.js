@@ -10,7 +10,10 @@ class SeaBoard extends Component{
   render(){
       const arr = this.props.map();
       return <div className={b()}>
-        <div className={b("center")}></div>
+        <div className={b("center")}>
+           <div className={b("left")}>{this.props.left}</div>
+           <div className={b("right")}>{this.props.right}</div>
+        </div>
         <div className={b("tl")}> 
           <div className={b("cell")}>{[arr[0]]}</div>
         </div>
@@ -57,6 +60,7 @@ class SeaBoard extends Component{
 
 SeaBoard.propTypes = {
    map: PropTypes.func
+   
 }
 
 SeaBoard.defaultProps = {
