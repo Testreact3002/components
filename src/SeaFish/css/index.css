@@ -1,0 +1,14 @@
+.sea-fish{
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: red;
+  overflow: hidden;
+  box-shadow: 5px 5px white;
+  padding: 2px 3px;
+}
+
+.sea-fish__image{
+  width: 45px;  
+  height: 45px;
+}
