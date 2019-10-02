@@ -8,31 +8,34 @@
     "#test": "node scripts/test.js --env=jsdom",
     "#getstorybook": "node node_modules/.bin/getstorybook",
     "storybook": "source ./.env; export NODE_PATH; start-storybook -p 6006 -s orig/  -c ./config/storybook",
-    "build-storybook": "source ./.env; export NODE_PATH; build-storybook -c config/storybook",
-    "#deploy-storybook": "source ./.env; export NODE_PATH; storybook-to-ghpages -c config/storybook",
+    "build-storybook": "source ./.env; export NODE_PATH; build-storybook -c ./config/storybook",
+    "deploy-storybook": "source ./.env; export NODE_PATH; storybook-to-ghpages -c ./config/storybook",
     "#deploy": "npm run build&&gh-pages -d build",
     "eslint": "source ./.env ;node node_modules/eslint/bin/eslint.js  $NODE_PATH stories",
-    "esdoc": "node node_modules/.bin/esdoc"
+    "esdoc": "node node_modules/.bin/esdoc",
+    "svgr": "node_modules/@svgr/cli/bin/svgr "
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shao18/components.git"
+    "url": "git+https://github.com/testreact3002/components.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shao18/components/issues"
+    "url": "https://github.com/testreact3002/components/issues"
   },
-  "homepage": "https://github.com/shao18/components#readme",
+  "homepage": "https://github.com/testreact3002/components#readme",
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "@storybook/react": "^5.0.11",
+    "@storybook/storybook-deployer": "^2.8.1",
     "@svgr/cli": "^4.3.3",
     "babel": "^6.23.0",
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^3.0.0",
     "dotenv": "^8.0.0",
     "dotenv-webpack": "^1.7.0",
     "esdoc-jsx-plugin": "^1.0.0",
