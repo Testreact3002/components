@@ -38,6 +38,7 @@ SeaFish.propTypes = {
   fishType : PropTypes.oneOf(["jellyfish", "starfish", "shark", "turtle"]),
   color: PropTypes.string,
   bite: PropTypes.bool,
+  big: PropTypes.bool,
 }
 
 SeaFish.defaultProps = {

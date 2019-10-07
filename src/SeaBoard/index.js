@@ -7,13 +7,19 @@ const b = block("sea-board");
 
 console.log(bg);
 class SeaBoard extends Component{
+  constructor(...args){
+    super(...args);
+  }
+  componentDidMount(){
+    console.log('RIGHT',this.right);
+  }
   render(){
-      const arr = this.props.map();
+      const arr = this.props.map;
       return <div className={b()}>
         <div className={b("center")}>
            <div className={b("left")}>{this.props.left}</div>
            <div className={b("right")}>{this.props.right}</div>
-           <div className={b("bottom")}>{this.props.bottom}</div>
+           <div className={b("bottom")}><ul className={b("messages")}>{this.props.msg}</ul></div>
         </div>
         <div className={b("tl")}> 
           <div className={b("cell")}>{[arr[0]]}</div>
@@ -60,11 +66,14 @@ class SeaBoard extends Component{
 }
 
 SeaBoard.propTypes = {
-   map: PropTypes.func
-   
+   map: PropTypes.array,
+   msg: PropTypes.string,
 }
 
 SeaBoard.defaultProps = {
-  map: ()=>[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+  map: [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],
+  left: null,
+  right: null,
+  msg:'',
 }
 export default SeaBoard;

@@ -2,7 +2,8 @@ import {storiesOf} from '@storybook/react';
 import React from "react";
 import SeaBoard from "SeaBoard";
 import SeaFish from "SeaFish";
-
+import app from "SeaBoard/stories/app.js";
+import map from "SeaBoard/stories/map.js";
 export default storiesOf("SeaBoard", module)
   .addDecorator(fn=>(<div style={{
   }}>{fn()}</div>))
@@ -13,7 +14,7 @@ export default storiesOf("SeaBoard", module)
   .add("Orange turtle bite green jellyfish", () => <SeaBoard right={<SeaFish fishType="turtle" color="orange" bite big/>} left={<SeaFish fishType="jellyfish" color="green" big/>}/>)
   .add("Orange turtle bite green starfish", () => <SeaBoard right={<SeaFish fishType="turtle" color="orange" bite big/>} left={<SeaFish fishType="starfish" color="green" big/>}/>)
   .add("Orange turtle bite green shark", () => <SeaBoard right={<SeaFish fishType="turtle" color="orange" bite big/>} left={<SeaFish fishType="shark" color="green" big/>}/>)
-  .add("with map", () => <SeaBoard map={function(){
+/*  .add("with map", () => <SeaBoard map={function(){
     return [ 
    [
     <SeaFish fishType="starfish" color="yellow"/>,
@@ -69,4 +70,6 @@ export default storiesOf("SeaBoard", module)
     [],//22
     [],//23
     ];
-}}/>)
+}}/>)*/
+.add("with map",map)
+.add("with App",app)
