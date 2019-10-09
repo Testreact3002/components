@@ -16,6 +16,8 @@
   height: 60%;
   margin-top: 2.5%;
   display: flex;
+  justify-content: space-around;
+  color: midnightblue;
 }
 .sea-board__right{
   width: 45%;
@@ -29,6 +31,15 @@
   background-color: var(--background);
   border-radius: 10px;
   box-shadow: 5px 5px white;
+  overflow: hidden;  
+}
+.sea-board__messages{
+  transform: translateY(-100%);
+  margin-top: 30%;
+  color: midnightblue;
+  font-family: sans-serif;
+  list-style: none;
+  padding-left: 20px;
 }
 .sea-board__cell{
    background-color: var(--background);
@@ -106,4 +117,9 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.sea-board__dice{
+   font-size: 90px;
+   
 }

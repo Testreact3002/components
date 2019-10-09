@@ -19,7 +19,7 @@ class SeaBoard extends Component{
         <div className={b("center")}>
            <div className={b("left")}>{this.props.left}</div>
            <div className={b("right")}>{this.props.right}</div>
-           <div className={b("bottom")}><ul className={b("messages")}>{this.props.msg}</ul></div>
+           <div className={b("bottom")}><ul className={b("messages")}>{this.props.msg.map((x,i)=><li className={b("message")}>{x}</li>)}</ul></div>
         </div>
         <div className={b("tl")}> 
           <div className={b("cell")}>{[arr[0]]}</div>
@@ -67,13 +67,13 @@ class SeaBoard extends Component{
 
 SeaBoard.propTypes = {
    map: PropTypes.array,
-   msg: PropTypes.string,
+   msg: PropTypes.array,
 }
 
 SeaBoard.defaultProps = {
   map: [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],
   left: null,
   right: null,
-  msg:'',
+  msg:[],
 }
 export default SeaBoard;
