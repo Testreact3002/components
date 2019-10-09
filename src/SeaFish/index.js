@@ -32,12 +32,12 @@ class SeaFish extends Component{
       let before;
       if(this.props.big){
          if(this.props.bites){
-            before = <span>bites: {this.props.bites}</span>;
+            before = <div key={2}>bites: {this.props.bites}</div>;
          }
-         before = <div>{[<span>bitten: {this.props.bitten}</span>,before]}</div>;
+         before = <div className={b("info")} style={{position:'absolute'}} >{[<div key={1}>bitten: {this.props.bitten}</div>,before]}</div>;
       }
       return <div 
-        className={b({big:this.props.big})} style={{backgroundColor:this.props.color}}>{before}<img className={b("image",{big:this.props.big})} src={src[this.props.fishType]} /></div>;
+        className={b({big:this.props.big})} style={{backgroundColor:this.props.color, position: 'relative'}}>{before}<img className={b("image",{big:this.props.big})} src={src[this.props.fishType]} /></div>;
   }
 }
 

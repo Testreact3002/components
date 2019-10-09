@@ -24,4 +24,15 @@
   max-width: 100%;
   max-height: 100%;
 }
-
+.sea-fish__info{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  padding: 10px 25%;
+  white-space: nowrap;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 5px 5px;
+  border-radius: 5px;
+}

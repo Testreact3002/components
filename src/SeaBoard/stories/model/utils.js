@@ -41,12 +41,12 @@ export function sea2map(sea){
 }
 
 export function swimable2big(swimable, bite=false){
-   return <SeaFish fishType={swimable.name} color={swimable.color} bite={bite} big bites={swimable.bites} bitten={swimable.bitten}/>
+   return <SeaFish fishType={swimable.name} color={swimable.color} bite={bite} big={true} bites={swimable.bites} bitten={swimable.bitten}/>
 }
 
 export function swimable2fish(swimable, id, big=false, bite=false){
    return <SeaFish fishType={swimable.name} color={swimable.color} key={id} bite={bite} big={big} bites={swimable.bites} bitten={swimable.bitten}/>
 }
 export function dices2left([first,second]) {
-   return [<Dice value={first} className="sea-board__dice"/>, <Dice value={second} className="sea-board__dice"/>];
+   return [<Dice value={first} className="sea-board__dice" key={1} />, <Dice value={second} className="sea-board__dice" key={2}/>];
 }
