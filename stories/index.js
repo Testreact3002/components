@@ -12,6 +12,7 @@ import Board from "Board";
 import ChessKnight from "ChessKnight";
 import seaBoard from "SeaBoard/stories";
 import seaFish from "SeaFish/stories";
+import DecimalToBinary from "DecimalToBinary/stories";
 
 storiesOf("Board with knight", module)
   .add("as text",()=><Board col={8} row={8} board={(i,j)=>(i==4 && j == 4)?"♘":undefined}/>)

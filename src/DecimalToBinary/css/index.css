@@ -1,0 +1,39 @@
+.decimal-to-binary{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.decimal-to-binary__group{
+  font-weight: bold;
+  width: 40%;
+  padding: 10px;
+  border: 2px solid ghostwhite;
+  margin: 5px;
+  border-radius: 5px;
+}
+.decimal-to-binary__group.decimal-to-binary__group_group_convert{
+  text-align: center;
+  border: none;
+}
+.decimal-to-binary__convert-button{
+  width: 50%;
+}
+.decimal-to-binary__clear-button{
+  color: crimson;
+  text-decoration: none;
+  border-bottom: 1px dotted crimson;
+  margin-left: 40px;
+}
+.decimal-to-binary__clear-button:hover{
+ text-decoration: none;
+ border-bottom: none;
+}
+.decimal-to-binary__errors.decimal-to-binary__errors_visible{
+  display: block;
+  font-size: 100%;
+}
+.decimal-to-binary__output.decimal-to-binary__output_hidden{
+ display: none;
+}
