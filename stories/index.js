@@ -10,6 +10,7 @@ import board from "Board/stories";
 import chessKnight from "ChessKnight/stories";
 import Board from "Board";
 import ChessKnight from "ChessKnight";
+import seaApp from "seaApp/stories";
 import seaBoard from "SeaBoard/stories";
 import seaFish from "SeaFish/stories";
 import DecimalToBinary from "DecimalToBinary/stories";

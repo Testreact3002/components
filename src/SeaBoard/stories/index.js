@@ -2,7 +2,8 @@ import {storiesOf} from '@storybook/react';
 import React from "react";
 import SeaBoard from "SeaBoard";
 import SeaFish from "SeaFish";
-import app from "SeaBoard/stories/app.js";
+import app from "seaApp";
+//import app from "SeaBoard/stories/app/index.js";
 import map from "SeaBoard/stories/map.js";
 export default storiesOf("SeaBoard", module)
   .addDecorator(fn=>(<div style={{
@@ -72,4 +73,4 @@ export default storiesOf("SeaBoard", module)
     ];
 }}/>)*/
 .add("with map",map)
-.add("with App",app)
+.add("with App",()=>app)
