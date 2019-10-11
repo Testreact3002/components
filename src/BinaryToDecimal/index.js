@@ -2,12 +2,12 @@ import React, {Component} from "react";
 import PropTypes from "prop-types";
 import {Form, FormControl, FormGroup, Button} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "DecimalToBinary/css/index.css";
+import "BinaryToDecimal/css/index.css";
 const binary = require("models").binary;
 import {block} from "bem-cn";
-const b = block("decimal-to-binary");
+const b = block("binary-to-decimal");
 
-class DecimalToBinary extends Component{
+class BinaryToDecimal extends Component{
   constructor(){
     super();
     this.state={...this.initialState};
@@ -52,12 +52,12 @@ class DecimalToBinary extends Component{
 
 }
 
-DecimalToBinary.propTypes = {
+BinaryToDecimal.propTypes = {
    
 }
 
-DecimalToBinary.defaultProps = {
+BinaryToDecimal.defaultProps = {
 
 };
 
-export default DecimalToBinary;
+export default BinaryToDecimal;
