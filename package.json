@@ -13,7 +13,9 @@
     "deploy": "npm run build&&gh-pages -d dist",
     "eslint": "source ./.env ;node node_modules/eslint/bin/eslint.js  $NODE_PATH stories",
     "esdoc": "node node_modules/.bin/esdoc",
-    "svgr": "node_modules/@svgr/cli/bin/svgr "
+    "svgr": "node_modules/@svgr/cli/bin/svgr ",
+    "webpack": "webpack",
+    "grasp": "grasp"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
   "homepage": "https://github.com/testreact3002/components#readme",
   "devDependencies": {
     "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@storybook/react": "^5.0.11",
     "@storybook/storybook-deployer": "^2.8.1",
@@ -54,6 +57,7 @@
     "eslint-plugin-sort-imports-es6-autofix": "^0.4.0",
     "fs": "0.0.1-security",
     "gh-pages": "^2.1.1",
+    "grasp": "^0.6.0",
     "html-webpack-plugin": "^3.2.0",
     "http-server": "^0.11.1",
     "prettier": "^1.17.1",
@@ -75,6 +79,7 @@
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.1",
-    "redux": "^4.0.4"
+    "redux": "^4.0.4",
+    "universal-router": "^8.3.0"
   }
 }
