@@ -1,4 +1,4 @@
-import {storiesOf} from "@storybook/react";
+import { storiesOf } from "@storybook/react";
 import BoardCell from "BoardCell";
 import React from "react";
 
@@ -7,10 +7,11 @@ export default storiesOf("BoardCell", module)
     <table
       style={{
         borderCollapse: "collapse",
-      border: "1px solid red",
+        border: "1px solid red",
         width: "100px",
-      height: "100px",		     
-    }}>
+        height: "100px"
+      }}
+    >
       <tr>{fn()}</tr>
     </table>
   ))

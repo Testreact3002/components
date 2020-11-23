@@ -1,19 +1,16 @@
-import React, {Component} from "react";
+import { block } from "bem-cn";
 import PropTypes from "prop-types";
-import {block} from "bem-cn";
+import React, { Component } from "react";
 import SvgJellyfish from "JellyFish/Jellyfish.js";
+
 const b = block("sea-fish");
 
-
-class JellyFish extends Component{
-
- render() { return <SvgJellyfish />
- }
+class JellyFish extends Component {
+  render() {
+    return <SvgJellyfish />;
+  }
 }
-JellyFish.propTypes = {
-}
+JellyFish.propTypes = {};
 
-JellyFish.defaultProps = {
-}
+JellyFish.defaultProps = {};
 export default JellyFish;
-

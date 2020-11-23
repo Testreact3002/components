@@ -1,6 +1,9 @@
 import React from "react";
-function Greeting(){
-  return <ol class="tasklist">
+
+function Greeting() {
+  return (
+    (
+<ol class="tasklist">
   <li class="tasklist__item"><p>Реализовать функцию перевода числа из двоичной системы счисления в
     десятичную.</p></li>
    
@@ -16,6 +19,7 @@ function Greeting(){
   клиентском фреймворке (или без него).</p>
   <p>Если запрашивают <a href="#/test1">#/test1</a>, то выводить на странице результат пункта №1.</p>
   <p>Если запрашивают <a href="#/test2">#/test2</a>, то выводить на странице результат пункта №2.</p></li>
-</ol>;
+</ol>
+);
 }
 export default Greeting;
