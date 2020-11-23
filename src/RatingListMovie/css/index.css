@@ -1,0 +1,18 @@
+.rating-list-movie__cover{
+  max-width: 100px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 0 16px 16px 0;
+}
+.rating-list-movie__calc-rate::before{
+  content:"Рейтинг: ";
+  font-weight: bold;
+}
+.rating-list-movie__votes::before{
+  content:"Голосов: ";
+  font-weight: bold;
+}
+.rating-list-movie__avg-rate::before{
+  content:"Средний рейтинг: ";
+  font-weight: bold;
+}

@@ -1,0 +1,33 @@
+.rating-list{
+}
+
+.rating-list.rating-list_type_mid{
+  max-width: 600px;
+}
+
+.rating-list.rating-list_type_small{
+  max-width: 450px;
+}
+
+.rating-list__date-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.rating-list__date-label {
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.rating-list__date.form-control{
+   flex-shrink: 0;
+   flex-grow: 1;
+   flex-basis: content;
+   
+}
+
+.rating-list__pagination{
+  justify-content: center;
+}

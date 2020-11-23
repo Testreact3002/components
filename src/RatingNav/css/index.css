@@ -1,0 +1,102 @@
+.rating-nav{
+
+}
+
+.rating-nav__item{
+  height: 100vh;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: saddlebrown;
+}
+
+.rating-nav__item.rating-nav__item_list_western,
+.rating-nav__link.rating-nav__link_list_western::before,
+.rating-nav .carousel-indicators li:nth-child(1)
+{
+  background-image: url("/cover-1.jpg");
+}
+.rating-nav__item.rating-nav__item_list_russian,
+.rating-nav__link.rating-nav__link_list_russian::before,
+.rating-nav .carousel-indicators li:nth-child(2){
+  background-image: url("/cover-3.jpg");
+  background-color: maroon;
+}
+.rating-nav__item.rating-nav__item_list_japanese,
+.rating-nav__link.rating-nav__link_list_japanese::before,
+.rating-nav .carousel-indicators li:nth-child(3){
+  background-image: url("/cover-2.jpg");
+  background-position: top right;
+  background-color: darksalmon;
+}
+.rating-nav__item.rating-nav__item_list_korean,
+.rating-nav__link.rating-nav__link_list_korean::before,
+.rating-nav .carousel-indicators li:nth-child(4){
+  background-image: url("/cover-4.jpg");
+  background-color: lightpink;
+}
+.rating-nav .carousel-indicators::before{
+   content: "";
+}
+.rating-nav .carousel-indicators li{
+  width: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  border: 3px solid white;
+
+}
+
+.rating-nav .carousel-indicators li.active{
+  opacity: 0.5;
+  border-color: grey;
+}
+.rating-nav .carousel-caption{
+ top: 50%;
+ transform: translateY(-50%);
+ bottom: initial;
+}
+
+.rating-nav .h3, .rating-nav h3{
+  font-size: min( 150px, 15vw );
+  text-shadow: 5px 5px 10px ghostwhite, 0 6px 10px black;
+  font-family: Wes;
+  color: beige;
+}
+
+.rating-nav__nav{
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.rating-nav__nav-item{
+  list-style-type: none;
+}
+.rating-nav__link{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.rating-nav__link::before{
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  border: 3px solid grey;
+  flex-shrink: none;
+  margin: 10px;
+}

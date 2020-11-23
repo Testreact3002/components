@@ -1,0 +1,131 @@
+.rating-list-item{
+   display: grid;
+   grid-template-columns: 1fr 100px 3fr 1fr 1fr 1fr;
+   margin-bottom : 10px;
+}
+
+.rating-list-item.rating-list-item_type_mid{
+  grid-template-columns: 300px 1fr;
+  max-width: 600px;
+}
+
+.rating-list-item.rating-list-item_type_small{
+  grid-template-columns: 1fr;
+  max-width: 450px;
+  box-shadow: 2px 5px 10px whitesmoke;
+}
+.rating-list-item__num::after{
+   content:".";
+}
+.rating-list-item__num{
+   padding: 0 10px;
+
+}
+
+.rating-list-item.rating-list-item_type_mid .rating-list-item__num, .rating-list-item.rating-list-item_type_small .rating-list-item__num{
+ grid-column: 2;
+ grid-row: 1;
+ font-size: 100px; 
+ align-self: center;
+ justify-self: center;
+ text-shadow: 5px 5px 10px brown, 5px 0 15px whitesmoke, 0 5px 20px black;
+}
+.rating-list-item.rating-list-item_type_small .rating-list-item__num{
+ grid-row: 1;
+ grid-column: 1; 
+}
+.rating-list-item.rating-list-item_type_mid .rating-list-item__num::after,
+.rating-list-item.rating-list-item_type_small .rating-list-item__num::after{
+ content: "";
+ 
+}
+.rating-list-item__title{
+  padding: 0 10px;
+  text-align: left;
+}
+.rating-list-item.rating-list-item_type_mid .rating-list-item__title{
+ grid-column: 2;
+ grid-row: 2;
+ display: inline-block;
+ text-align: center; 
+}
+.rating-list-item.rating-list-item_type_small .rating-list-item__title{
+ grid-column: 1;
+ grid-row: 2;
+ text-align: center;
+}
+.rating-list-item__calc-rate{
+  padding: 0 10px;
+  text-align: center;
+}
+.rating-list-item.rating-list-item_type_mid .rating-list-item__calc-rate:before,
+.rating-list-item.rating-list-item_type_small .rating-list-item__calc-rate:before{
+  content: "Рейтинг: ";
+}
+.rating-list-item.rating-list-item_type_mid .rating-list-item__calc-rate{
+  grid-column: 2;
+}
+.rating-list-item.rating-list-item_type_small .rating-list-item__calc-rate{
+  grid-column: 1;
+}
+.rating-list-item__votes{
+  padding: 0 10px;
+  text-align: center;
+}
+
+.rating-list-item.rating-list-item_type_small .rating-list-item__votes::before,
+.rating-list-item.rating-list-item_type_mid .rating-list-item__votes::before{
+  content: "Голосов: ";
+}
+.rating-list-item.rating-list-item_type_mid .rating-list-item__votes{
+  grid-column: 2;
+}
+.rating-list-item.rating-list-item_type_small .rating-list-item__votes{
+  grid-column: 1;
+}
+.rating-list-item__avg-rate{
+
+  padding: 0 10px;
+  text-align: center;
+}
+.rating-list-item.rating-list-item_type_small .rating-list-item__avg-rate::before,
+.rating-list-item.rating-list-item_type_mid .rating-list-item__avg-rate::before{
+  content: "Средний рейтинг: ";
+}
+.rating-list-item.rating-list-item_type_small .rating-list-item__avg-rate{
+  grid-column: 1;
+}
+.rating-list-item.rating-list-item_type_mid .rating-list-item__avg-rate{
+  grid-column: 2;
+}
+.rating-list-item__cover-link{
+  padding: 0;
+}
+.rating-list-item.rating-list-item_type_mid .rating-list-item__cover-link{
+  grid-row: 1/6;
+  grid-column: 1;
+  mix-blend-mode: multiply;
+}
+.rating-list-item.rating-list-item_type_small .rating-list-item__cover-link{
+  grid-column: 1;
+  grid-row: 1;
+  mix-blend-mode: multiply;
+}
+.rating-list-item__year::before{
+  content: " (";
+}
+
+.rating-list-item__year::after{
+  content: ")";
+}
+
+.rating-list-item__cover{
+  width: 100%;
+}
+.rating-list-item.rating-list-item_type_small .rating-list-item__cover{
+   opacity: 0.7;
+}
+
+
+
+
