@@ -3,7 +3,7 @@ import RatingListHeader from "RatingListHeader";
 import React from "react";
 
 export default storiesOf("RatingListHeader", module)
-  .addDecorator(fn => <div style={{}}>{fn()}</div>)
+  .addDecorator((fn) => <div style={{}}>{fn()}</div>)
   .add("default", () => <RatingListHeader />)
   .add("sort num", () => <RatingListHeader sort="num" />)
   .add("sort title", () => <RatingListHeader sort="title" />)

@@ -3,7 +3,7 @@ import RatingNav from "RatingNav";
 import React, { useState } from "react";
 
 export default storiesOf("RatingNav", module)
-  .addDecorator(fn => <div style={{}}>{fn()}</div>)
+  .addDecorator((fn) => <div style={{}}>{fn()}</div>)
   .add("default", () => <RatingNav />)
   .add("list 1", () => <RatingNav activeList={1} />)
   .add("list 2", () => <RatingNav activeList={2} />)

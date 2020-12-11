@@ -43,7 +43,7 @@ Board.propTypes = {
   reverse: PropTypes.bool,
   row: PropTypes.number,
   col: PropTypes.number,
-  click: PropTypes.func
+  click: PropTypes.func,
 };
 
 Board.defaultProps = {
@@ -51,6 +51,6 @@ Board.defaultProps = {
   click: () => {},
   col: 8,
   row: 8,
-  reverse: false
+  reverse: false,
 };
 export default Board;

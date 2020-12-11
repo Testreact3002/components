@@ -3,13 +3,13 @@ import BoardTh from "BoardTh";
 import React from "react";
 
 export default storiesOf("BoardTh", module)
-  .addDecorator(fn => (
+  .addDecorator((fn) => (
     <table
       style={{
         borderCollapse: "collapse",
         border: "1px solid red",
         width: "50px",
-        height: "100px"
+        height: "100px",
       }}
     >
       <tr>{fn()}</tr>

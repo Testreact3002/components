@@ -7,10 +7,10 @@ import assignPropTypes from "assign-prop-types";
 export default assignPropTypes(
   {
     row: PropTypes.number,
-    reverse: PropTypes.bool
+    reverse: PropTypes.bool,
   },
   {
-    reverse: false
+    reverse: false,
   }
 )(({ row, reverse }) => (
   <th className={block("board")("th", { reverse })}>{row}</th>

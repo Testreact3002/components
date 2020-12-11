@@ -70,6 +70,6 @@ export function swimable2fish(swimable, id, big = false, bite = false) {
 export function dices2left([first, second]) {
   return [
     <Dice value={first} className="sea-board__dice" key={1} />,
-    <Dice value={second} className="sea-board__dice" key={2} />
+    <Dice value={second} className="sea-board__dice" key={2} />,
   ];
 }

@@ -79,7 +79,7 @@ class SeaBoard extends Component {
 
 SeaBoard.propTypes = {
   map: PropTypes.array,
-  msg: PropTypes.array
+  msg: PropTypes.array,
 };
 
 SeaBoard.defaultProps = {
@@ -106,10 +106,10 @@ SeaBoard.defaultProps = {
     [],
     [],
     [],
-    []
+    [],
   ],
   left: null,
   right: null,
-  msg: []
+  msg: [],
 };
 export default SeaBoard;

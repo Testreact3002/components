@@ -6,7 +6,7 @@ import SeaFish from "SeaFish";
 import map from "SeaBoard/stories/map.js";
 
 export default storiesOf("SeaBoard", module)
-  .addDecorator(fn => <div style={{}}>{fn()}</div>)
+  .addDecorator((fn) => <div style={{}}>{fn()}</div>)
   .add("default", () => <SeaBoard />)
   .add("Red shark bite turtle", () => (
     <SeaBoard

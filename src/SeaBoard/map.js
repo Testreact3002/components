@@ -11,7 +11,7 @@ export default () => (
         <SeaFish fishType="turtle" color="green" key="3" />,
         <SeaFish color="magento" key="4" />,
         <SeaFish color="white" key="5" />,
-        <SeaFish fishType="turtle" color="pink" key="6" />
+        <SeaFish fishType="turtle" color="pink" key="6" />,
       ], // 0
       [], // 1
       [], // 2
@@ -28,7 +28,7 @@ export default () => (
         <SeaFish fishType="turtle" color="green" key="3" />,
         <SeaFish color="magento" key="4" />,
         <SeaFish color="white" key="5" />,
-        <SeaFish fishType="turtle" color="pink" key="6" />
+        <SeaFish fishType="turtle" color="pink" key="6" />,
       ], // 10
       [], // 11
       [], // 12
@@ -39,7 +39,7 @@ export default () => (
         <SeaFish fishType="turtle" color="green" key="3" />,
         <SeaFish color="magento" key="4" />,
         <SeaFish color="white" key="5" />,
-        <SeaFish fishType="turtle" color="pink" key="6" />
+        <SeaFish fishType="turtle" color="pink" key="6" />,
       ], // 14
       [], // 15
       [], // 16
@@ -51,12 +51,12 @@ export default () => (
         <SeaFish fishType="turtle" color="green" key="3" />,
         <SeaFish color="magento" key="4" />,
         <SeaFish color="white" key="5" />,
-        <SeaFish fishType="turtle" color="pink" key="6" />
+        <SeaFish fishType="turtle" color="pink" key="6" />,
       ], // 19
       [], // 20
       [], // 21
       [], // 22
-      [] // 23
+      [], // 23
     ]}
   />
 );

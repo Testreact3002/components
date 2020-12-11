@@ -3,12 +3,12 @@ import BoardAlpha from "BoardAlpha";
 import React from "react";
 
 export default storiesOf("BoardAlpha", module)
-  .addDecorator(fn => (
+  .addDecorator((fn) => (
     <table
       style={{
         borderCollapse: "collapse",
         border: "1px solid red",
-        height: "100px"
+        height: "100px",
       }}
     >
       <tbody>{fn()}</tbody>

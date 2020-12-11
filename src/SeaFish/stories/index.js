@@ -4,13 +4,13 @@ import React from "react";
 import SeaFish from "SeaFish";
 
 export default storiesOf("SeaFish", module)
-  .addDecorator(fn => (
+  .addDecorator((fn) => (
     <div
       style={{
         width: "200px",
         height: "200px",
         backgroundColor: "black",
-        padding: "20px"
+        padding: "20px",
       }}
     >
       {fn()}

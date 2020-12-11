@@ -48,5 +48,5 @@ export default {
     default:
         return right;
     }
-  }
+  },
 };

@@ -15,12 +15,12 @@ const fishes = {
   jellyfish,
   starfish,
   shark,
-  turtle
+  turtle,
 };
 
 const bites = {
   shark: sharkBite,
-  turtle: turtleBite
+  turtle: turtleBite,
 };
 
 class SeaFish extends Component {
@@ -33,8 +33,10 @@ class SeaFish extends Component {
     let before;
     if (this.props.big) {
       if (this.props.bites) {
-        before = <div key={2}>
-bites:{this.props.bites}</div>;
+        before = (
+<div key={2}>
+bites:{this.props.bites}</div>
+);
       }
       before = (
         <div className={b("info")} style={{ position: "absolute" }}>
@@ -43,7 +45,7 @@ bites:{this.props.bites}</div>;
               bitten:
               {this.props.bitten}
             </div>,
-            before
+            before,
           ]}
         </div>
       );
@@ -67,13 +69,13 @@ SeaFish.propTypes = {
   fishType: PropTypes.oneOf(["jellyfish", "starfish", "shark", "turtle"]),
   color: PropTypes.string,
   bite: PropTypes.bool,
-  big: PropTypes.bool
+  big: PropTypes.bool,
 };
 
 SeaFish.defaultProps = {
   fishType: "jellyfish",
   color: "orange",
   bite: false,
-  big: false
+  big: false,
 };
 export default SeaFish;

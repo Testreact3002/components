@@ -60,7 +60,7 @@ RatingListItem.propTypes = {
   votesLabel: PropTypes.string,
   avgRateLabel: PropTypes.string,
   type: PropTypes.oneOf([null, "mid", "small"]),
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 
 RatingListItem.defaultProps = {
@@ -68,6 +68,6 @@ RatingListItem.defaultProps = {
   votesLabel: "Голосов",
   avgRateLabel: "Средний рейтинг",
   type: null,
-  onClick: () => {}
+  onClick: () => {},
 };
 export default RatingListItem;

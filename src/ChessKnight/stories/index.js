@@ -3,13 +3,13 @@ import ChessKnight from "ChessKnight";
 import React from "react";
 
 export default storiesOf("ChessKnight", module)
-  .addDecorator(fn => (
+  .addDecorator((fn) => (
     <table
       style={{
         borderCollapse: "collapse",
         border: "1px solid red",
         textAlign: "center",
-        "--size": "100px"
+        "--size": "100px",
       }}
     >
       <tr>

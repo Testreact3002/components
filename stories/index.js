@@ -4,6 +4,7 @@ import { storiesOf } from "@storybook/react";
 import BinaryToDecimal from "BinaryToDecimal/stories";
 import Board from "Board";
 import ChessKnight from "ChessKnight";
+import Profile from "Profile/stories";
 import RatingList from "RatingList/stories";
 import RatingListHeader from "RatingListHeader/stories";
 import RatingListItem from "RatingListItem/stories";

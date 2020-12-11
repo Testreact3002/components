@@ -4,7 +4,7 @@ import React from "react";
 import im from "./65.jpg";
 
 export default storiesOf("RatingListItem", module)
-  .addDecorator(fn => <div style={{}}>{fn()}</div>)
+  .addDecorator((fn) => <div style={{}}>{fn()}</div>)
   .add("default", () => (
     <RatingListItem
       num={10}
@@ -37,7 +37,7 @@ export default storiesOf("RatingListItem", module)
       votes={1038}
       avgRate={8.8}
       year="2020"
-    />
+    />,
   ])
   .add("mid", () => (
     <RatingListItem
@@ -74,7 +74,7 @@ export default storiesOf("RatingListItem", module)
       votes={1038}
       avgRate={8.8}
       year="2020"
-    />
+    />,
   ])
   .add("small", () => (
     <RatingListItem
@@ -111,5 +111,5 @@ export default storiesOf("RatingListItem", module)
       votes={1038}
       avgRate={8.8}
       year="2020"
-    />
+    />,
   ]);
