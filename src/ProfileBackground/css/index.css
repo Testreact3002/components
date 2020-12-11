@@ -1,0 +1,20 @@
+
+.profile-background{
+ z-index: -1;
+ position: absolute;
+ height: 470px;
+ top:0; 
+}
+@media screen and (max-width: 800px) {
+  .profile-background__img, .profile-background{
+     height : calc( 470px - 270 * var(--k)) !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .profile-background {
+     height: 200px;
+  }
+  .profile-background__img {
+     height: 200px !important;
+  }
+}
