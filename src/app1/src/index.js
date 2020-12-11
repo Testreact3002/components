@@ -9,7 +9,7 @@ import Greeting from "./Greeting";
 const greeting = <Greeting />;
 const routes = [
   { path: "/test1", action: () => <BinaryToDecimal /> },
-  { path: "/test2", action: () => seaApp }
+  { path: "/test2", action: () => seaApp },
   // {path: "/(.*)", action: ()=> {}}
 ];
 
@@ -17,7 +17,7 @@ const root = document.getElementById("root");
 function route(hash) {
   router
     .resolve({ pathname: hash })
-    .then(rootComponent => {
+    .then((rootComponent) => {
       ReactDom.render(rootComponent, root);
     })
     .catch(() => {

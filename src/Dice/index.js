@@ -15,11 +15,11 @@ class Dice extends Component {
   }
 }
 Dice.propTypes = {
-  value: PropTypes.oneOf([1, 2, 3, 4, 5, 6])
+  value: PropTypes.oneOf([1, 2, 3, 4, 5, 6]),
 };
 
 Dice.defaultProps = {
-  className: ""
+  className: "",
 };
 
 export default Dice;
