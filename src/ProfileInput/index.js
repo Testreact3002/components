@@ -38,7 +38,6 @@ const ProfileInput = ({ fullName, email, phone, onSubmit = (state) => {} }) => {
     >
       <div className="profile-input__group">
         <label className="profile-input__item profile-input__item_type_name">
-        >
 <div 
             className="profile-input__label"
                     >Фамилия и имя
